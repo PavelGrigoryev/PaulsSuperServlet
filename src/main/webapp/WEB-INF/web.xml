@@ -20,26 +20,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>OrcServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.OrcServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>OrcServlet</servlet-name>
-        <url-pattern>/orc</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ForwardServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.ForwardServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>ForwardServlet</servlet-name>
-        <url-pattern>/forward</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>StudentsServlet</servlet-name>
         <servlet-class>com.superpaulscompany.paulssuperservlet.StudentsServlet</servlet-class>
     </servlet>
@@ -57,6 +37,46 @@
     <servlet-mapping>
         <servlet-name>CountServlet</servlet-name>
         <url-pattern>/count</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>com.superpaulscompany.paulssuperservlet.filters.LogFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>LoginToPartyServlet</servlet-name>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.LoginToPartyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginToPartyServlet</servlet-name>
+        <url-pattern>/party</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DayNumberInTheYearServlet</servlet-name>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.DayNumberInTheYearServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DayNumberInTheYearServlet</servlet-name>
+        <url-pattern>/year</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DayOfTheWeekServlet</servlet-name>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.DayOfTheWeekServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DayOfTheWeekServlet</servlet-name>
+        <url-pattern>/week</url-pattern>
     </servlet-mapping>
 
 </web-app>

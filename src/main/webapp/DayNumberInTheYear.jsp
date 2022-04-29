@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: Undeadsanta
   Date: 4/29/2022
-  Time: 11:00 AM
+  Time: 10:35 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <title>PaulsSite</title>
+    <title>Day number in the year</title>
 </head>
 <body>
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
@@ -59,73 +59,31 @@
         </div>
     </div>
 </nav>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <a href="homework22.jsp">
-                <img src="WebContent/images/1920x810/mainWallpaper1.jpg" class="d-block w-100" alt="...">
-            </a>
-            <div class="carousel-caption">
-                <h2>Домашняя работа №22</h2>
-            </div>
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Здарова челик, опять</h1>
+            <p class="col-lg-10 fs-4"> Введи дату по паттерну "dd.MM.yyyy"</p>
+            <p class="col-lg-10 fs-4"> Пример: 12.07.1999 </p>
+            <p class="col-lg-10 fs-4"> И ты получишь номер дня в году</p>
         </div>
-        <div class="carousel-item">
-            <a href="homework23.jsp">
-                <img src="WebContent/images/1920x810/mainWallpaper2.jpg" class="d-block w-100" alt="...">
-            </a>
-            <div class="carousel-caption">
-                <h2>Домашняя работа №23</h2>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <a href="#">
-                <img src="WebContent/images/1920x810/mainWallpaper3.jpg" class="d-block w-100"
-                     alt="...">
-            </a>
-            <div class="carousel-caption">
-                <h2>Домашняя работа №24</h2>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <a href="#">
-                <img src="WebContent/images/1920x810/mainWallpaper4.jpg" class="d-block w-100" alt="...">
-            </a>
-            <div class="carousel-caption">
-                <h2>Домашняя работа №25</h2>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <a href="#">
-                <img src="WebContent/images/1920x810/mainWallpaper5.jpg"
-                     class="d-block w-100" alt="...">
-            </a>
-            <div class="carousel-caption">
-                <h2>Домашняя работа №26</h2>
-            </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light" action="year" method="POST">
+                <div class="form-floating mb-3">
+                    <input name="userDate" class="form-control" id="floatingInput" placeholder="dd.MM.yyyy">
+                    <label for="floatingInput">dd.MM.yyyy</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <button class="w-100 btn btn-lg btn-success" type="submit">Ввести</button>
+                </div>
+                <div class="form-floating mb-3">
+                    <button class="w-100 btn btn-lg btn-dark" type="reset">Сброс</button>
+                </div>
+                <hr class="my-4">
+                <small class="text-muted">Вводя дату, ты соглашаешся отдать свою квартиру.</small>
+            </form>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 </div>
 <footer class="footer footer-dark bg-dark">
     <div style="text-align:right; padding:1em; color: #fff;">
