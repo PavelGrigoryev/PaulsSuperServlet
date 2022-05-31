@@ -1,4 +1,4 @@
-package com.superpaulscompany.paulssuperservlet;
+package com.superpaulscompany.paulssuperservlet.servlets.homework22;
 
 import com.superpaulscompany.paulssuperservlet.model.MyDate;
 

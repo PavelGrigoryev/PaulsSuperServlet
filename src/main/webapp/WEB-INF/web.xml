@@ -11,7 +11,7 @@
 
     <servlet>
         <servlet-name>MyDateServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.MyDateServlet</servlet-class>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework22.MyDateServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -21,7 +21,7 @@
 
     <servlet>
         <servlet-name>StudentsServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.StudentsServlet</servlet-class>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework23.StudentsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -31,7 +31,7 @@
 
     <servlet>
         <servlet-name>CountServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.CountServlet</servlet-class>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework23.CountServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -51,7 +51,7 @@
 
     <servlet>
         <servlet-name>LoginToPartyServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.LoginToPartyServlet</servlet-class>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework23.LoginToPartyServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -61,7 +61,7 @@
 
     <servlet>
         <servlet-name>DayNumberInTheYearServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.DayNumberInTheYearServlet</servlet-class>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework22.DayNumberInTheYearServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -71,12 +71,43 @@
 
     <servlet>
         <servlet-name>DayOfTheWeekServlet</servlet-name>
-        <servlet-class>com.superpaulscompany.paulssuperservlet.DayOfTheWeekServlet</servlet-class>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework22.DayOfTheWeekServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>DayOfTheWeekServlet</servlet-name>
         <url-pattern>/week</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HtmlServlet</servlet-name>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework24.HtmlServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HtmlServlet</servlet-name>
+        <url-pattern>/html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveRequestServlet</servlet-name>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework26.SaveRequestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SaveRequestServlet</servlet-name>
+        <url-pattern>/saveRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveRequestServletWithDB</servlet-name>
+        <servlet-class>com.superpaulscompany.paulssuperservlet.servlets.homework26.SaveRequestServletWithSQL</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SaveRequestServletWithDB</servlet-name>
+        <url-pattern>/saveWithSql</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

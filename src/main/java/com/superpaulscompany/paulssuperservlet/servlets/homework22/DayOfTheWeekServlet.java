@@ -1,4 +1,4 @@
-package com.superpaulscompany.paulssuperservlet;
+package com.superpaulscompany.paulssuperservlet.servlets.homework22;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
